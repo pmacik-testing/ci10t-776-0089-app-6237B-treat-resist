@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-pugi
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-776-0089-tenant/ci10t-776-0089-app/devfile-sample-pugi@sha256:2e663294c40899063558fb67e97db8c1e43e26e7078571ccb0c5cab912152008
+        name: my-nodejs
+        resources: {}
+status: {}
